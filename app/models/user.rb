@@ -511,7 +511,7 @@ class User < ApplicationRecord
     end
 
     def show_ads?
-      !CurrentUser.safe_mode? && !is_gold?
+      !CurrentUser.safe_mode? && !is_member?
     end
   end
 
